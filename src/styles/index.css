@@ -1,0 +1,131 @@
+.homePage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.homePageLogo{
+    background: #1246ff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 10px 10px 2px #c5c5c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.homePageLogoBoxImg{
+    margin-bottom: 15px;
+}
+
+.homePageLogoImg{
+    width: 260px;
+    height: 250px;
+    border-radius: 55px;
+    margin-top: 70px;
+    box-shadow: 0px 2px 2px 2px #002e4b;
+}
+
+.LogoBoxImgTextLogo{
+    display: flex;
+}
+
+.textNeuro{
+    color: #fff;
+    font-size: 55px;
+}
+
+.textPlay{
+    color: #fcd108;
+    font-size: 55px;
+}
+
+.textExplicationLogo{
+    color: #fff;
+    font-size: 15px;
+}
+
+.homePageSignIn{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textAprender{
+    color: #474747;
+    display: flex;
+    text-align: center;
+} 
+
+.signInButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.buttonCadastrar{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background: #157bbb;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px 0px #474747;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonCadastrar:hover{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background: #679fc2;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px 0px #474747;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonTenhoConta{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background: #6fc54a;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px 0px #474747;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonTenhoConta:hover{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background: #94c281;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px 0px #474747;
+    cursor: pointer;
+    transition: 0.5s;
+}

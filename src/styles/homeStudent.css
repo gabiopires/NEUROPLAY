@@ -1,0 +1,477 @@
+.bodyHome1Map {
+  background-image: url(../../public/images/trailHorizontal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: start;
+  transition: 0.5s;
+}
+
+.bodyHome2Map{
+  background-image: url(../../public/images/trailSea1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: start;
+  transition: 0.5s;
+}
+
+@media (max-width: 1030px) {
+  .bodyHome1Map {
+    background-image: url(../../public/images/trailVertical.png) !important;
+  }
+
+  .homeBox{
+    flex-direction: column !important;
+  }
+
+  .bodyHome2Map{
+    background-image: url(../../public/images/trailSeaVertical.png) !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .columActivity{
+    width: 100%;
+    height: 118px !important;
+  }
+
+  .previousPage{
+    width: 20% !important;
+    margin-left: -220px !important;
+    position: absolute;
+    top: 300;
+    justify-content: end !important;
+    align-items: end !important;
+  }
+
+  .nextPage{
+    width: 20% !important;
+    margin-left: 330px !important;
+    position: absolute;
+    top: 300 !important;
+    justify-content: end !important;
+    align-items: end !important;
+  }
+
+  .levelNumberImg{
+    width: 100px !important;
+    height: 100px !important;
+    margin-top: 45px;
+  }
+
+  .columActivy1{
+    margin-left: 15px !important;
+    margin-top: 200px !important;
+  }
+
+  .cardActivity1, .cardActivity2, .cardActivity3, .cardActivity4, .cardActivity5, .cardActivity6, .cardActivity7, .cardActivity8, .cardActivity9, .cardActivity10{
+    width: 90px !important;
+    height: 40px !important;
+  }
+
+  .columActivy2{
+    margin-left: 130px !important;
+    margin-top: 80px !important;    
+  }
+
+  .columActivy3{
+    margin-left: -30px !important;
+    margin-top: -5px !important;
+  }
+
+  .columActivy4{
+    margin-left: 15px !important;
+    margin-top: 5px !important;
+  }
+
+  .columActivy5{
+    margin-left: 5px !important;
+    margin-top: 100px !important;
+  }
+
+  .columActivy6{
+    margin-left: 55px !important;
+    margin-top: 60px !important;
+  }
+
+  .columActivy7{
+    margin-left: 65px !important;
+    margin-top: 60px !important;
+  }
+
+  .columActivy8{
+    margin-left: -15px !important;
+    margin-top: 30px !important;
+  }
+
+  .columActivy9{
+    margin-left: 15px !important;
+    margin-top: 20px !important;
+  }
+
+  .columActivy10{
+    margin-left: 105 !important;
+    margin-top: 0px !important;
+  }
+}
+
+.homeBox{
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.columActivity{
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columActivy1{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 200px;
+  margin-bottom: 110px;
+}
+
+.cardActivity1{
+  display: flex;
+  border: solid 2px #d14a6e;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fc5b8c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy1:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy2{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 80px;
+  margin-top: 180px;
+}
+
+.cardActivity2{
+  display: flex;
+  border: solid 2px #0fb446;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #1cdb5c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy2:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy3{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.cardActivity3{
+  display: flex;
+  border: solid 2px #1094c9;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #28c0fc;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy3:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy4{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 100px;
+  margin-top: 250px;
+}
+
+.cardActivity4{
+  display: flex;
+  border: solid 2px #d14a6e;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fc5b8c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy4:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy5{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.cardActivity5{
+  display: flex;
+  border: solid 2px #0fb446;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #1cdb5c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy5:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+
+/* MAPA 2 */
+.columActivy6{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 30px;
+  margin-top: -190px;
+}
+
+.cardActivity6{
+  display: flex;
+  border: solid 2px #1094c9;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #1094c9;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy6:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy7{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 50px;
+  margin-top: 230px;
+}
+
+.cardActivity7{
+  display: flex;
+  border: solid 2px #d14a6e;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fc5b8c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy7:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy8{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+.cardActivity8{
+  display: flex;
+  border: solid 2px #0fb446;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #1cdb5c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy8:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy9{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 100px;
+  margin-top: 300px;
+}
+
+.cardActivity9{
+  display: flex;
+  border: solid 2px #1094c9;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #1094c9;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy9:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.columActivy10{
+  height: 70px;
+  transition: all 0.3s;
+  margin-left: 100px;
+  margin-top: -120px;
+}
+
+.cardActivity10{
+  display: flex;
+  border: solid 2px #d14a6e;
+  height: 60px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fc5b8c;
+  box-shadow: 0px 5px 10px 0px #535353;
+  cursor: pointer;
+}
+
+.columActivy10:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+/* SETAS */
+.nextPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  width: 100%;
+}
+
+.nextPageImage{
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.nextPageImage:hover{
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.previousPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  width: 100%;
+}
+
+.previousPageImage{
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.previousPageImage:hover{
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+/* NUMEROS */
+.levelNumber1{
+  position: relative;
+  left: 5px;
+  top: -155px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  height: 120px;
+  width: 50px; 
+  cursor: pointer;
+  width: 120px; 
+  height: 150px;
+}
+
+.levelNumber2, .levelNumber3{
+  position: relative;
+  left: -7px;
+  top: -145px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  height: 120px;
+  width: 130px; 
+  height: 145px;
+  cursor: pointer;
+}
+
+.levelNumber4, .levelNumber5{
+  position: relative;
+  left: -20px;
+  top: -150px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  height: 120px;
+  width: 50px; 
+  cursor: pointer;
+  width: 140px; 
+  height: 145px;
+}
+
+.levelNumber6, .levelNumber7, .levelNumber8, .levelNumber9, .levelNumber10{
+  position: relative;
+  left: -5px;
+  top: -145px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  height: 120px;
+  width: 50px; 
+  cursor: pointer;
+  width: 140px; 
+  height: 145px;
+}
+
+.levelNumberImg{
+  height: 140px;
+  width: 140px;
+}

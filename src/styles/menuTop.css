@@ -1,0 +1,132 @@
+.menuTop{
+    width: 100vw;
+}
+
+.menuBox{
+    background: #1266ad;
+    height: 13vh;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.textLogo{
+    display: flex;
+    align-items: end;
+    width: 50%;
+}
+
+ @media (max-width: 450px) {
+    .textLogo{
+        flex-direction: column !important;
+        align-items: start !important;
+        line-height: 0.8;
+    }
+
+    .textLogoNeuro{
+        margin-bottom: 0px !important;
+        margin-left: 15px !important;
+    }
+
+    .textLogoPlay{
+        margin-bottom: 0px !important;
+        margin-left: 15px !important;
+    }
+ }
+
+.textLogoNeuro{
+    color: #fff;
+    font-size: 6vh;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.textLogoPlay{
+    color: #fcd108;
+    font-size: 6vh;
+    margin-bottom: 10px;
+}
+
+.BoximageLogo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.logoimg{
+    height: 70px;
+    width: 75px;
+    border-radius: 100%;
+    margin-top: 7px;
+    margin-right: 40px;
+}
+
+.logoimgOptions{
+    height: 10vh;
+    width: 75px;
+    border-radius: 100%;
+    margin-top: 2px;
+}
+
+.optionsImg{
+    height: 8vh;
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.MenuDropDown{
+    position: absolute;
+    top: 90;
+    right: 5;
+    width: 150px;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    color: #1266ad;
+    border-radius: 0px 0px 5px 5px;
+    transition: 0.3s;
+}
+
+.MenuDropDownSelect{
+    position: absolute;
+    top: 91;
+    right: 5;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    color: #1266ad;
+    border-radius: 0px 0px 5px 5px;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.optionSelect{
+    padding: 5px 0px 10px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.optionSelect:hover{
+    padding: 5px 0px 10px 0px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fcd108;
+    transition: 0.5s;
+}

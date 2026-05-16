@@ -1,0 +1,33 @@
+.bodyStudentsInfo{
+    background-color: #d2f3c4;
+    box-shadow: 0px 5px 10px 0px #8d8d8d;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.studentsInfo_contentC1{
+    width: 100%;
+    margin: 10px 0px 10px 15px;
+    font-size: 7px;
+}
+
+.studentsInfo_ContentC2{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    font-size: 7px;
+}
+
+.studentsInfo_ContentC3{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    font-size: 7px;
+}
+
+.studentsInfo_ContentC4{
+    width: 100%;
+    margin: 10px 0px 10px 20px;
+    font-size: 7px;
+}

@@ -1,0 +1,238 @@
+.bodyLogin {
+  background-image: url(../../public/images/campo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.signInArea{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.signInAreaLogo{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 125px;
+}
+
+.signInAreaLogoImg{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 15px 0px #535353;
+}
+
+.signInBox{
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px 0px #535353;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.textUser{
+    margin-top: 150px;
+    font-size: 16px;
+}
+
+.userInput{
+    height: 20px;
+    width: 340px;
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid #000; 
+}
+
+.textPassword{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.passwordBox{
+    width: 340px;
+    border-bottom: 2px solid #000; 
+}
+
+.passwordInput{
+    height: 20px;
+    width: 92%;
+    border: none; 
+    outline: none;
+}
+
+.buttonEnter{
+    height: 35px;
+    width: 160px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background: #1246ff;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 2px 2px 0px #474747;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonEnter:hover{
+    background: #5b7fff;
+    transition: 0.5s;
+}
+
+.signinGoogle{
+    height: 35px;
+    width: 280px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #bbbbbb;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.signinGoogle:hover{
+    height: 35px;
+    width: 280px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: #cacaca;
+    color: #000;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #bbbbbb;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.googleIcon{
+    margin-right: 15px;
+}
+
+.signinFacebook{
+    height: 35px;
+    width: 280px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #bbbbbb;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.signinFacebook:hover{
+    height: 35px;
+    width: 280px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background: #cacaca;
+    color: #000;
+    font-size: 15px;
+    box-shadow: 0px 2px 2px 0px #bbbbbb;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.facebookIcon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.textRecoverPass{
+    margin-top: 30px;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.textFirstAccess{
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Face ID*/
+.faceLoginBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.faceModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.faceModal {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.faceVideo {
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.faceButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cancelButton {
+    background: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.loginButton {
+    background: #2d5bff;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}

@@ -1,0 +1,162 @@
+.bodyTeacherRegister {
+    background-image: url(../../public/images/campo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: start;
+  }
+  
+  .registerAreaTeacher{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .registerTeacherLogo{
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 105px;
+  }
+  
+  .registerTeacherLogoImg{
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      box-shadow: 2px 2px 15px 0px #535353;
+  }
+  
+  .registerTherapistBox{
+      background-color: #fff;
+      border-radius: 50px;
+      box-shadow: 0px 2px 15px 0px #535353;
+      margin-top: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 5px;
+      padding: 10px;
+  }
+  
+  .textNameTeacher{
+      margin-top: 130px;
+      font-size: 16px;
+  }
+  
+  .nameTeacherInput{
+      height: 20px;
+      width: 340px;
+      border: none; 
+      outline: none;
+      border-bottom: 2px solid #000; 
+  }
+  
+  .textEmailTeacher{
+      font-size: 16px;
+      margin-top: 10px;
+  }
+  
+  .emailTeacherInput{
+      height: 20px;
+      width: 340px;
+      border: none; 
+      outline: none;
+      border-bottom: 2px solid #000; 
+  }
+
+  .ValidatedEmailTeacher{
+    margin-top: 5px;
+    font-size: 15px;
+}
+  
+  .textUserTeacher{
+    font-size: 16px;
+    margin-top: 10px;
+    }
+
+    .userTeacherInput{
+        height: 20px;
+        width: 340px;
+        border: none; 
+        outline: none;
+        border-bottom: 2px solid #000; 
+    }
+
+    .textTeacherPassword{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .passwordTeacherBox{
+        border-bottom: 2px solid #000; 
+        width: 340px;
+    }
+
+    .passwordTeacherInput{
+        height: 20px;
+        width: 93%;
+        border: none; 
+        outline: none;
+    }
+
+    .textTeacherPasswordValidated{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .passwordValidatedTeacherInput{
+        height: 20px;
+        width: 93%;
+        border: none; 
+        outline: none;
+    }
+
+    .MessageValidatedPasswordTeacher{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+
+    .textMessageValidatedPasswordTeacher{
+        font-size: 15px;
+    }
+  
+  .buttonRegisterTeacher{
+      height: 35px;
+      width: 230px;
+      border-radius: 50px;
+      margin-top: 10px;
+      background: #1246ff;
+      color: #fff;
+      outline: none;
+      border: none;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 0px 2px 2px 0px #474747;
+      cursor: pointer;
+      transition: 0.5s;
+  }
+
+  .buttonRegisterTeacher:hover{
+      background: #5e80fa;
+      transition: 0.5s;
+  }
+  
+  .textHaveAccessTeacher{
+      font-size: 15px;
+      margin-bottom: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+      text-decoration: underline;
+  }

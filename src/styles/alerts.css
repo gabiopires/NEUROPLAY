@@ -1,0 +1,69 @@
+.bodyAlert{
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    background-color: rgba(68, 68, 68, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxAlert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px 5px #6b6b6b;
+    margin: 5px;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+@media (max-height: 790px) {
+    .boxtextAlert{
+        font-size: 17px;
+    }
+}
+
+.boxtextAlert{
+    max-width: 100vw;
+    max-height: 100vh;
+    text-align: center;
+}
+
+.boxButtonAlerts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonAlerts{
+    height: 45px;
+    min-width: 150px;
+    padding: 05px;
+    border-radius: 50px;
+    background: #1246ff;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px 0px #474747;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.buttonAlerts:hover{
+    background: #6984e7;
+    transition: 0.5s;
+}

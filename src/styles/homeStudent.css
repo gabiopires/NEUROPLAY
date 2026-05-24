@@ -40,89 +40,62 @@
   }
 }
 
-@media (max-width: 380px) {
-  .columActivity{
+@media (max-width: 450px) { /* Aumentado para 450px para cobrir a maioria dos celulares modernos */
+  .columActivity {
     width: 100%;
-    height: 118px !important;
+    height: 140px !important; /* Altura uniforme para manter a distância entre os níveis */
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
-  .previousPage{
-    width: 20% !important;
-    margin-left: -220px !important;
-    position: absolute;
-    top: 300;
-    justify-content: end !important;
-    align-items: end !important;
+  /* * Zeramos o margin-left para que o Flexbox faça o trabalho 
+   * de centralizar todos os botões perfeitamente no meio da tela.
+   */
+  .columActivy1, .columActivy2, .columActivy3, .columActivy4, .columActivy5,
+  .columActivy6, .columActivy7, .columActivy8, .columActivy9, .columActivy10 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
   }
 
-  .nextPage{
-    width: 20% !important;
-    margin-left: 330px !important;
-    position: absolute;
-    top: 300 !important;
-    justify-content: end !important;
-    align-items: end !important;
+  /* Dá um respiro maior no nível 1 para não ficar escondido atrás do menu azul */
+  .columActivy1, .columActivy6 {
+    margin-top: 120px !important;
   }
 
-  .levelNumberImg{
+  /* Redimensionamento das bases dos botões */
+  .cardActivity1, .cardActivity2, .cardActivity3, .cardActivity4, .cardActivity5, 
+  .cardActivity6, .cardActivity7, .cardActivity8, .cardActivity9, .cardActivity10 {
+    width: 90px !important;
+    height: 40px !important;
+  }
+
+  /* Redimensionamento dos animais/números */
+  .levelNumberImg {
     width: 100px !important;
     height: 100px !important;
     margin-top: 45px;
   }
 
-  .columActivy1{
-    margin-left: 15px !important;
-    margin-top: 200px !important;
+  /* * Correção das setas:
+   * Removidas as margens negativas e o top sem unidade. 
+   * Fixadas na parte inferior da tela com position absolute.
+   */
+  .previousPage {
+    width: auto !important;
+    position: absolute;
+    top: 85vh !important; /* Fixado próximo à base da tela */
+    left: 20px !important; /* Colado à esquerda */
+    margin-left: 0px !important;
   }
 
-  .cardActivity1, .cardActivity2, .cardActivity3, .cardActivity4, .cardActivity5, .cardActivity6, .cardActivity7, .cardActivity8, .cardActivity9, .cardActivity10{
-    width: 90px !important;
-    height: 40px !important;
-  }
-
-  .columActivy2{
-    margin-left: 130px !important;
-    margin-top: 80px !important;    
-  }
-
-  .columActivy3{
-    margin-left: -30px !important;
-    margin-top: -5px !important;
-  }
-
-  .columActivy4{
-    margin-left: 15px !important;
-    margin-top: 5px !important;
-  }
-
-  .columActivy5{
-    margin-left: 5px !important;
-    margin-top: 100px !important;
-  }
-
-  .columActivy6{
-    margin-left: 55px !important;
-    margin-top: 60px !important;
-  }
-
-  .columActivy7{
-    margin-left: 65px !important;
-    margin-top: 60px !important;
-  }
-
-  .columActivy8{
-    margin-left: -15px !important;
-    margin-top: 30px !important;
-  }
-
-  .columActivy9{
-    margin-left: 15px !important;
-    margin-top: 20px !important;
-  }
-
-  .columActivy10{
-    margin-left: 105 !important;
-    margin-top: 0px !important;
+  .nextPage {
+    width: auto !important;
+    position: absolute;
+    top: 85vh !important; /* Fixado próximo à base da tela */
+    right: 20px !important; /* Colado à direita */
+    margin-left: 0px !important;
   }
 }
 

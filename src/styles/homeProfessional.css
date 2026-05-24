@@ -18,27 +18,30 @@
     align-items: center;
 }
 
-.professionalPerfil{
+.professionalPerfil {
     margin-top: 50px;
     background-color: #fff;
     width: 330px;
-    height: 80px;
+    min-height: 80px; /* Permite que a caixa cresça se o nome tiver várias linhas */
+    padding: 15px; /* Ajustado para dar respiro em todos os lados (cima, baixo e laterais) */
     border-radius: 10px;
-    font-size: 30px;
-    padding: 0px 15px 0px 15px;
+    font-size: 24px; /* Fonte levemente reduzida para caber melhor */
     display: flex;
     justify-content: start;
     align-items: center;
     font-weight: bold;
     box-shadow: 0px 5px 15px 0px #8d8d8d;
     cursor: pointer;
-    gap: 10px;
+    gap: 15px;
+    line-height: 1.2; /* Melhora o espaçamento entre as linhas do texto quebrado */
 }
 
-.professionalImgPerfil{
+.professionalImgPerfil {
     border-radius: 50%;
-    width: 22%;
-    height: 90%;
+    width: 60px; /* Tamanho fixo em pixels para não distorcer */
+    height: 60px; /* Tamanho fixo em pixels para não distorcer */
+    flex-shrink: 0; /* Impede que o texto esmague a imagem empurrando-a para o lado */
+    object-fit: cover; /* Garante que a foto preencha o círculo perfeitamente */
 }
 
 .professionalOptions{

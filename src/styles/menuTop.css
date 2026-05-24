@@ -79,10 +79,11 @@
     cursor: pointer;
 }
 
-.MenuDropDown{
+.MenuDropDown {
     position: absolute;
-    top: 90;
-    right: 5;
+    /* Alinha o topo do menu com o final da barra azul (13vh) */
+    top: 13vh; 
+    right: 5px; /* Adicionada a unidade px */
     width: 150px;
     height: 0vh;
     display: flex;
@@ -93,14 +94,17 @@
     color: #1266ad;
     border-radius: 0px 0px 5px 5px;
     transition: 0.3s;
+    overflow: hidden; /* Evita que o texto vaze quando a altura for 0 */
 }
 
-.MenuDropDownSelect{
+.MenuDropDownSelect {
     position: absolute;
-    top: 91;
-    right: 5;
+    /* Garante que ele comece exatamente onde a barra azul termina */
+    top: 13vh; 
+    right: 5px; /* Adicionada a unidade px */
     width: 150px;
-    height: 200px;
+    height: auto; /* Altera para auto ou mantém os 200px se preferir fixo */
+    padding: 10px 0; /* Dá um espaçamento interno mais elegante */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +114,7 @@
     border-radius: 0px 0px 5px 5px;
     transition: 0.3s;
     z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra suave para destacar do fundo */
 }
 
 .optionSelect{

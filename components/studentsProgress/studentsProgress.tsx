@@ -42,7 +42,7 @@ export default function StudentsProgress(props: studentsProps){
                     new Date(log.log_timestamp).toLocaleString('pt-BR'), // Formata a data para o Brasil
                     log.log_lev_id,
                     log.lev_name || "N/A",
-                    log.log_audio_type,
+                    log.log_audio_type == "CORRECT_ANSWER" ? "Resposta Correta" : "Resposta Incorreta",
                     log.log_audio
                 ];
                 tableRows.push(logData);

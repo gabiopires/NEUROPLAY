@@ -126,7 +126,7 @@ export default async function Login(req: NextApiRequest, res: NextApiResponse){
                         SUM(CASE WHEN l.log_audio_type = 'CORRECT_ANSWER' THEN 1 ELSE 0 END) AS correct_answers,
                         SUM(CASE WHEN l.log_audio_type = 'WRONG_OPTION' THEN 1 ELSE 0 END) AS wrong_answers
                     FROM 
-                        activity_log l
+                        audio_log l
                     JOIN 
                         student s ON l.log_stu_id = s.stu_id
                     WHERE 

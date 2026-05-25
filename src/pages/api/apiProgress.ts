@@ -119,12 +119,30 @@ export default async function Login(req: NextApiRequest, res: NextApiResponse){
                         qtdLevelStudents DESC;
                     `,[idProfessional]
                 );
+
+                const [rows_answersStudents]:unknown[] = await connection.query(`
+                    SELECT 
+                        s.stu_name,
+                        SUM(CASE WHEN l.log_audio_type = 'CORRECT_ANSWER' THEN 1 ELSE 0 END) AS correct_answers,
+                        SUM(CASE WHEN l.log_audio_type = 'WRONG_OPTION' THEN 1 ELSE 0 END) AS wrong_answers
+                    FROM 
+                        activity_log l
+                    JOIN 
+                        student s ON l.log_stu_id = s.stu_id
+                    WHERE 
+                        s.stu_prof_id = ?
+                    GROUP BY 
+                        s.stu_name;
+                    `,[idProfessional]
+                );
+
                 connection.release();
 
                 const dataReturn={
                     qtdDiagnostic: rows_qtdDiagnostic,
                     qtdLevelDiagnostic: rows_qtdLevelDiagnostic,
                     qtdLevelStudents: rows_qtdLevelStudents,
+                    answersStudents: rows_answersStudents,
                 };
                 
                 return res.status(200).json(dataReturn)

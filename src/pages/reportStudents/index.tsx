@@ -30,12 +30,19 @@ interface LevelDiagnostic {
     qtdLevelDiagnostic: number
 }
 
+interface AnswersStudents {
+    stu_name: string;
+    correct_answers: number;
+    wrong_answers: number;
+}
+
 export default function HomeProfessional(){
 
     const [showAlerts, setshowAlerts] = useState(false);
     const [dataQtdDiagnostic, setDataQtdDiagnostic] = useState<QtdDiagnostic[]>([])
     const [dataQtdLevelStudents, setDataQtdLevelStudents] = useState<LevelStudents[]>([])
     const [dataQtdLevelDiagnostic, setDataQtdLevelDiagnostic] = useState<LevelDiagnostic[]>([])
+    const [dataAnswersStudents, setDataAnswersStudents] = useState<AnswersStudents[]>([])
 
     function colorByIndex(index: number, total: number = 10, opacity: number = 1): string {
         const hue = (index * 360 / total) % 360;
@@ -58,6 +65,7 @@ export default function HomeProfessional(){
                 setDataQtdDiagnostic(data.qtdDiagnostic)
                 setDataQtdLevelStudents(data.qtdLevelStudents)
                 setDataQtdLevelDiagnostic(data.qtdLevelDiagnostic)
+                setDataAnswersStudents(data.answersStudents || [])
             }
             else{
                 setshowAlerts(true)
@@ -162,6 +170,50 @@ export default function HomeProfessional(){
         },
     };
 
+    const labelAnswersStudents = [...new Set(dataAnswersStudents.map((d) => d.stu_name))];
+    const dataAnswers = {
+        labels: labelAnswersStudents,
+        datasets: [
+            {
+                label: "Corretas",
+                data: labelAnswersStudents.map(label => {
+                    const item = dataAnswersStudents.find(d => d.stu_name === label);
+                    return item ? item.correct_answers : 0;
+                }),
+                backgroundColor: 'rgba(75, 192, 192, 0.7)', // Verde
+                borderColor: 'rgba(75, 192, 192, 1)',
+            },
+            {
+                label: "Erradas",
+                data: labelAnswersStudents.map(label => {
+                    const item = dataAnswersStudents.find(d => d.stu_name === label);
+                    return item ? item.wrong_answers : 0;
+                }),
+                backgroundColor: 'rgba(255, 99, 132, 0.7)', // Vermelho
+                borderColor: 'rgba(255, 99, 132, 1)',
+            }
+        ],
+    };
+
+    // 5. Configuração Visual do Novo Gráfico
+    const optionsAnswers = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top' as const,
+            },
+            title: {
+                display: true,
+                text: 'Respostas Corretas x Erradas por Aluno',
+                color: 'rgba(0, 0, 0)',
+            },
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+            }
+        }
+    };
 
     return (
         <div className="bodyReport">
@@ -180,6 +232,9 @@ export default function HomeProfessional(){
                 </div>
                 <div className="statisticsCharts">
                     <Bar options={optionsLevelDiagnostic} data={dataLevelDiagnostic}/>
+                </div>
+                <div className="statisticsCharts">
+                    <Bar options={optionsAnswers} data={dataAnswers} />
                 </div>
             </div>
         </div>
